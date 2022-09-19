@@ -1,0 +1,119 @@
+@import 'src/assets/variables';
+@import 'src/assets/breakpoints';
+
+.container {
+  position: relative;
+}
+.title {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.list, .profileMenuList {
+  padding: 8px 0;
+  min-width: 238px;
+  width: 100%;
+  background: $white;
+  position: absolute;
+  box-shadow: 0 4px 24px rgba(0,0,0,.16)!important;
+  top: 40px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+.list {
+  right: 0;
+  @include table {
+    padding: 12px 6px;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+}
+.profileMenuList {
+  right: -20px;
+  @include tablet_small {
+    position: fixed;
+    padding: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.dropdownCloseBtn {
+  margin-top: 12px;
+}
+.profileMenu, .profileInfo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.profileInfo {
+  @include tablet_small {
+    display: none;
+  }
+}
+
+.dropdownTitle {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 16px 6px 16px;
+  @include tablet_small {
+    padding-top: 8px ;
+  }
+}
+
+.exitButton {
+  height: 64px;
+  box-shadow: 0 6px 4px -4px rgba(0,0,0,.15);
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  padding: 0 24px;
+  background: $white;
+  z-index: 10;
+  span {
+    font-size: 16px;
+  }
+}
+
+.profileInfoContainer {
+  z-index: 2;
+  padding: 10px 16px 0 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: $white;
+}
+
+.notificationContainer {
+  padding: 12px 16px;
+  gap: 12px;
+  background: $white;
+}
+
+.dropdownList {
+  margin-top: 4px;
+  background: $white;
+  @include tablet_small {
+    box-shadow: 0 6px 4px -4px rgba(0,0,0,.15);
+  }
+}
+
+.line {
+  width: 100%;
+  height: 8px;
+  background: $gray-tertiary;
+}

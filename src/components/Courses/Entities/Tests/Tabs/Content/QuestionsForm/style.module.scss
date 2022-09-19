@@ -1,0 +1,25 @@
+@import "src/assets/variables";
+@import "src/assets/breakpoints";
+
+.header {
+  padding-bottom: 24px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid $gray-secondary;
+  display: flex;
+  justify-content: space-between;
+  span {
+    color: $black-secondary
+  }
+  @include mobile {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+.emptyQuestionsView {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 64px 0;
+}

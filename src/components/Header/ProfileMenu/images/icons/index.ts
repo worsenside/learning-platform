@@ -1,0 +1,6 @@
+export { default as profileIconSrc } from './profile-icon.svg'
+export { default as logoutIconSrc } from './logout-icon.svg'
+export { default as notificationIconSrc } from './notification-icon.svg'
+export { default as schoolIconSrc } from './school-icon.svg'
+export { default as dropdownIconSrc } from 'UI/Dropdown/images/dropdown-icon.svg'
+export { default as exitIconSrc } from './exit-icon.svg'

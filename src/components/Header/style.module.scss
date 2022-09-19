@@ -1,0 +1,25 @@
+@import 'src/assets/variables';
+
+.header {
+  min-height: 64px;
+  background: $white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.15);
+  padding: 0 20px;
+  z-index: 10;
+  position: sticky;
+}
+
+.burgerMenu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.optionsMenu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

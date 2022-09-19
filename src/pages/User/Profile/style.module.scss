@@ -1,0 +1,42 @@
+@import "src/assets/variables";
+@import "src/assets/breakpoints";
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.header {
+  width: 100%;
+  background: $white;
+  display: flex;
+  padding: 24px;
+  align-items: center;
+  gap: 24px;
+}
+.name {
+  display: flex;
+  gap: 4px;
+  h2 {
+    font-weight: 400;
+  }
+}
+.content {
+  padding: 20px;
+  background: $white;
+}
+.splitLine {
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.08);
+  margin: 24px 0 32px 0
+}
+.caption {
+  color: $black-secondary;
+}
+.back {
+  @include tablet_small {
+    padding-left: 24px;
+  }
+}

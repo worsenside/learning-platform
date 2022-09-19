@@ -1,0 +1,24 @@
+@import 'src/assets/variables';
+@import 'src/assets/breakpoints';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.inputList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  @include tablet_small {
+    grid-template-columns: 1fr;
+  }
+}
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.caption {
+  color: $black-tertiary
+}

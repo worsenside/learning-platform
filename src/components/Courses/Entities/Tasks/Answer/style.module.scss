@@ -1,0 +1,67 @@
+@import 'src/assets/variables';
+@import 'src/assets/breakpoints';
+
+.container {
+  padding: 24px;
+  background: $white;
+  display: flex;
+  flex-direction: column;
+  h2 {
+    font-weight: 500;
+    @include mobile {
+      font-size: $caption-primary-fz;
+      font-weight: 400;
+    }
+  }
+}
+.form {
+  margin-top: 24px;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+.attemptsCount {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  span {
+    color: $black-tertiary;
+  }
+  .attempt {
+    padding: 4px;
+    border-radius: 2px;
+    border: 1px solid $gray-primary;
+    color: $black-secondary;
+    font-weight: 600;
+    &:last-of-type {
+      color: $black-tertiary;
+    }
+  }
+}
+.answerInfo {
+  margin-top: 16px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+.fields {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 480px;
+}
+.answerTextarea {
+  max-height: 100px;
+  min-height: 100px;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  .submitBtn {
+    width: 100%;
+  }
+}

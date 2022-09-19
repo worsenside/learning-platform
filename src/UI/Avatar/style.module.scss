@@ -1,0 +1,40 @@
+@import "src/assets/variables";
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  overflow: hidden;
+
+  img, .emptyPhoto {
+    width: 100%;
+    height: 100%;
+  }
+
+  .emptyPhoto {
+    background: $black-quaternary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span {
+      color: $white;
+    }
+  }
+}
+
+.avatarSmall {
+  width: 36px;
+  height: 36px;
+}
+
+.avatarMedium {
+  width: 76px;
+  height: 76px;
+
+  .emptyPhoto {
+    span {
+      font-size: $h1-desktop-fz;
+      line-height: $h1-desktop-lh;
+    }
+  }
+}

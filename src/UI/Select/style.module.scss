@@ -1,0 +1,93 @@
+@import "src/assets/variables";
+
+.selectContainer {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  font-size: $input-primary-fz;
+  line-height: 21px;
+  color: $black-tertiary;
+  background-color: #fafbfc;
+  border: 1px solid $gray-primary;
+  border-radius: $default-border-radius;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  tab-index: 0;
+  &Small {
+    .selectedText {
+      padding: 4px 8px;
+      cursor: pointer;
+      font-weight: 500;
+    }
+  }
+  &Round {
+    border-radius: 50px;
+  }
+  &Success {
+    .selectedText {
+      border-color: $green-primary;
+    }
+  }
+  &Danger {
+    .selectedText {
+      border-color: $red;
+    }
+  }
+  &:hover {
+    border: 1px solid $green-primary
+  }
+  &:focus-within, &:focus {
+    outline: none;
+    border: 1px solid $green-primary;
+    box-shadow: 0 0 0 5px rgba(8, 166, 82, 0.25);
+  }
+}
+.selectedText {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.selectedText::after {
+  content: url("./images/select-icon.svg");
+  width: 10px;
+  height: 6px;
+  position: absolute;
+  right: 16px;
+}
+
+.selectOptions {
+  position: absolute;
+  width: 100%;
+  overflow: auto;
+  max-height: 180px;
+  opacity: 0;
+  z-index: 100;
+  visibility: hidden;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.12);
+  background: $white;
+  &Show {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.option {
+  height: 44px;
+  padding: 4px 16px;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  cursor: pointer;
+  &:last-child {
+    border-bottom: none;
+  }
+  &:hover {
+    background-color: $green-primary;
+    color: $white;
+  }
+  &Active {
+    background-color: $green-primary;
+    color: $white;
+  }
+  &Hidden {
+    display: none;
+  }
+}

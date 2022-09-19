@@ -1,0 +1,30 @@
+@import 'src/assets/variables';
+@import 'src/assets/breakpoints';
+
+.authContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  @include mobile {
+    padding-top: 32px;
+    justify-content: flex-start;
+  }
+  .header {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.userContainer {
+  display: flex;
+  padding: 32px 20px 32px 70px;
+  transition: 0.15s;
+  @include tablet_small {
+    padding: 32px 0 0;
+  }
+}
+.asideIsOpen {
+  padding-left: 184px;
+}

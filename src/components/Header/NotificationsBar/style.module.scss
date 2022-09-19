@@ -1,0 +1,105 @@
+@import 'src/assets/variables';
+@import 'src/assets/breakpoints';
+
+.buttonToggle {
+  width: 36px;
+  height: 36px;
+  @include tablet_small {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+    font-size: 14px;
+  }
+}
+
+.container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.3);
+  display: none;
+  z-index: 1045;
+  &IsOpen {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.content {
+  height: 100%;
+  width: 500px;
+  background: $white;
+  right: 0;
+  @include tablet_small {
+    width: 100%;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  height: 64px;
+  align-items: center;
+  position: relative;
+  padding: 16px;
+  span {
+    font-size: $text-primary-fz;
+    font-weight: 500;
+  }
+}
+.readBtnContainer {
+  border-top: 1px solid $gray-primary;
+  border-bottom: 1px solid $gray-primary;
+  button {
+    padding: 10px 0;
+    width: 100%;
+    height: 100%;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+.closeIcon {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.contentItem {
+  padding: 16px 24px;
+  border-bottom: 1px solid $gray-primary;
+}
+
+.descriptionContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.readIndicatorFill {
+  min-width: 8px;
+  min-height: 8px;
+  border-radius: 50%;
+  background: $blue-primary;
+  border: 1px solid $blue-primary;
+}
+.readIndicatorEmpty {
+  min-width: 8px;
+  min-height: 8px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid $black-quaternary;
+}
+
+.date {
+  margin-top: 8px;
+  color: $black-quaternary;
+}

@@ -1,0 +1,8 @@
+export { default as trashIconSrc } from './trash.svg'
+export { default as editIconSrc } from './edit.svg'
+export { default as deactivateIconSrc } from './deactivate.svg'
+export { default as activateIconSrc } from './activate.svg'
+export { default as testIconSrc } from './test.svg'
+export { default as eventIconSrc } from './event.svg'
+export { default as lessonIconSrc } from './lesson.svg'
+export { default as taskIconSrc } from './task.svg'

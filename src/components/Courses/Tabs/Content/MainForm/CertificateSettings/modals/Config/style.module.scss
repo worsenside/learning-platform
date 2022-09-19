@@ -1,0 +1,38 @@
+@import 'src/assets/variables';
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  max-width: 480px;
+  label {
+    font-size: $input-primary-fz;
+    font-weight: 500;
+    cursor: pointer;
+  }
+}
+.caption {
+  color: $black-tertiary;
+}
+.splitLine {
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.buttonsActions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.buttonsFooter {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}

@@ -1,0 +1,186 @@
+@import 'src/assets/variables';
+@import 'src/assets/breakpoints';
+
+.authForm {
+  width: 100%;
+  max-width: 408px;
+}
+.inputsContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.buttonsContainer {
+  &Authorization {
+    width: 100%;
+    margin-top: 8px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 24px;
+  }
+  &Registration {
+    width: 100%;
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  &Recovery {
+    width: 100%;
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+  }
+}
+.linksContainer {
+  margin-top: 16px;
+  text-align: center;
+  span {
+    color: $black-quaternary;
+    margin-right: 4px;
+  }
+}
+.body{
+  min-height: 364px;
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 24px 24px;
+  background-color: $white;
+  .stepsContainer {
+    margin-bottom: 24px;
+    span {
+      font-size: $text-primary-fz;
+      line-height: $text-primary-lh;
+      color: $black-tertiary;
+    }
+  }
+  .privacyInfo {
+    margin-bottom: 32px;
+  }
+  h1{
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 16px;
+  }
+  p {
+    margin-bottom: 24px;
+    text-align: center;
+  }
+  .title-login-step2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    line-height: 20px;
+    color: black;
+    margin-bottom: 32px;
+  }
+  .conf {
+    color: rgba(153, 153, 153, 1);
+    text-align: center;
+  }
+  .email {
+    line-height: 18px;
+    font-size: 14px;
+    text-align: start;
+  }
+  &__email {
+    height: 364px!important;
+  }
+}
+
+.emailContainer {
+  max-width: 408px;
+  width: 100%;
+  p {
+    text-align: left!important;
+    gap: 5px;
+    margin-bottom: 16px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .btnSend {
+    display: inline;
+    color: $green-primary;
+    cursor: pointer;
+    font-size: $button-secondary-fz;
+    margin: 0 3px;
+    &:hover {
+      color: $green-quinary
+    }
+    &:disabled {
+      cursor: default;
+      pointer-events: none;
+      opacity: 0.8;
+    }
+  }
+}
+.mailToLink {
+  margin-left: 3px;
+  color: $black-primary;
+  &:hover {
+    opacity: 0.8;
+    color: $black-primary;
+  }
+}
+.backBtn {
+  margin-top: 24px;
+}
+
+.passwordContainer {
+  width: 100%;
+  max-width: 408px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  .passwordInfo {
+    margin-bottom: 0;
+  }
+}
+
+.cardsForm {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
+.card {
+  width: 100%;
+  min-height: 343px;
+  padding: 16px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  @include tablet {
+    min-height: unset;
+  }
+  h2 {
+    margin-top: 24px;
+    font-weight: 400;
+  }
+  p {
+    text-align: left;
+    margin-top: 12px;
+  }
+}
+.cardPhoto {
+  background: $gray-primary;
+  height: 146px;
+  width: 100%;
+  @include tablet {
+    display: none;
+  }
+}

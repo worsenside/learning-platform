@@ -1,0 +1,24 @@
+@import 'src/assets/variables';
+@import 'src/assets/breakpoints';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  span {
+    color: $black-secondary;
+  }
+  @include mobile {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    button {
+      width: 100%;
+    }
+  }
+}

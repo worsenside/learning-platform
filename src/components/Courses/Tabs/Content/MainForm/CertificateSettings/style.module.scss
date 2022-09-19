@@ -1,0 +1,9 @@
+@import 'src/assets/breakpoints';
+
+.buttonsContainer {
+  display: flex;
+  gap: 12px;
+  @include mobile {
+    flex-direction: column;
+  }
+}

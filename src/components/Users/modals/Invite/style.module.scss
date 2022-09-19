@@ -1,0 +1,27 @@
+@import 'src/assets/variables';
+@import 'src/assets/breakpoints';
+.description {
+  color: $black-secondary;
+  font-size: $caption-primary-fz;
+  line-height: $caption-primary-lh;
+}
+.inputContainer {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  label {
+    font-size: $input-primary-fz;
+    font-weight: 500;
+    cursor: pointer;
+  }
+}
+.buttonsContainer {
+  margin-top: 52px;
+  display: flex;
+  gap: 8px;
+  @include mobile {
+    flex-direction: column-reverse;
+    gap: 12px;
+  }
+}

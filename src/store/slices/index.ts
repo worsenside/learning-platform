@@ -1,0 +1,8 @@
+export { default as systemSlice } from './system'
+export { default as registrationSlice } from './registration'
+export { default as passwordRecoverySlice } from './passwordRecovery'
+export { default as schoolSlice } from './school'
+export { default as authorizationSlice } from './authorization'
+export { default as userSlice } from './user'
+export { default as lessonSlice } from './lesson'
+export { default as taskSlice } from './task'

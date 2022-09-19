@@ -1,0 +1,46 @@
+@import "src/assets/variables";
+@import "src/assets/breakpoints";
+
+.container {
+  width: 52px;
+  min-height: 100vh;
+  height: 100%;
+  position: absolute;
+  top: 64px;
+  left: 0;
+  background: $aside-bg;
+  transition: 0.15s;
+  border-right: 1px solid #dee2e6;
+  z-index: 2;
+  @include tablet_small {
+    display: none;
+  }
+}
+.open {
+  width: 164px;
+  @include tablet_small {
+    top: 66px;
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    border-right: 0;
+  }
+}
+
+.options {
+  margin-top: 16px;
+  @include tablet_small {
+    margin-top: 0;
+    padding-top: 16px;
+    background: $white;
+    width: 200px;
+    height: 100%;
+  }
+}
+.iconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

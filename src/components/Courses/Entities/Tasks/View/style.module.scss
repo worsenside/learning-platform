@@ -1,0 +1,102 @@
+@import 'src/assets/variables';
+@import 'src/assets/breakpoints';
+
+.container {
+  margin-top: 12px;
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+}
+.header {
+  padding: 24px;
+  background: $white;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  h2 {
+    font-weight: 500;
+  }
+}
+
+.headerInfo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  .headerInfoItem {
+    padding: 16px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    span {
+      text-align: center;
+      font-size: $text-secondary-fz;
+      &:first-of-type {
+        color: $black-tertiary;
+      }
+      &:last-of-type {
+        color: $black-secondary;
+      }
+    }
+  }
+}
+
+.contactsInfo {
+  padding: 24px;
+  background: $white;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  h2 {
+    font-weight: 500;
+    @include mobile {
+      font-size: $caption-primary-fz;
+      font-weight: 400;
+    }
+  }
+  p {
+    color: $black-secondary;
+  }
+}
+.contacts {
+  display: flex;
+  gap: 12px;
+  @include mobile {
+    flex-direction: column;
+  }
+}
+.contactsInfo {
+  p {
+    font-size: $caption-primary-fz;
+  }
+  h2 {
+    @include mobile {
+      font-size: $caption-primary-fz;
+      font-weight: 400;
+    }
+  }
+}
+.contactsLink {
+  font-size: $link-primary-fz;
+  padding: 4px 8px;
+  background: rgba(0, 0, 0, 0.08);
+  color: $black-primary;
+  border-radius: $default-border-radius;
+}
+.media {
+  display: flex;
+  gap: 12px;
+}
+.mediaItem {
+  padding: 6px;
+  border: 1px solid $black-secondary;
+  border-radius: $default-border-radius;
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.caption {
+  font-size: $caption-primary-fz;
+}

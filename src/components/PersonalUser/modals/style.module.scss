@@ -1,0 +1,56 @@
+@import 'src/assets/breakpoints';
+@import 'src/assets/variables';
+
+.buttonsContainer {
+  display: flex;
+  gap: 8px;
+  @include mobile {
+    flex-direction: column-reverse;
+    gap: 12px;
+  }
+}
+.modalSplitLine {
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.08);
+}
+.modalForm {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.passwordContainer {
+  gap: 16px;
+  max-width: 480px;
+  label {
+    font-size: $input-primary-fz;
+    font-weight: 500;
+  }
+  button {
+    margin-top: 16px;
+    @include mobile {
+      width: 100%;
+    }
+  }
+}
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 480px;
+  label {
+    font-size: $input-primary-fz;
+    font-weight: 500;
+    cursor: pointer;
+  }
+}
+.inputDescription {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  label {
+    font-size: $input-primary-fz;
+    cursor: pointer;
+    font-weight: 500;
+  }
+}

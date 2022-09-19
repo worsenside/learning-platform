@@ -1,0 +1,17 @@
+@import 'src/assets/breakpoints';
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  @include mobile {
+    padding-top: 32px;
+    justify-content: flex-start;
+  }
+  .header {
+    display: flex;
+    justify-content: center;
+  }
+}

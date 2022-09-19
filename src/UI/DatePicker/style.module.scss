@@ -1,0 +1,29 @@
+@import 'src/assets/variables';
+@import 'src/assets/breakpoints';
+
+.datepickerContainer {
+  padding: 10px 20px;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  font-size: $input-primary-fz;
+  line-height: 21px;
+  color: $black-tertiary;
+  background-color: #fafbfc;
+  border: 1px solid $gray-primary;
+  border-radius: $default-border-radius;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  tab-index: 0;
+  cursor: pointer;
+  &Disabled {
+    cursor: default;
+  }
+  &:hover {
+    border: 1px solid $green-primary
+  }
+  &:focus-within, &:focus {
+    outline: none;
+    border: 1px solid $green-primary;
+    box-shadow: 0 0 0 5px rgba(8, 166, 82, 0.25);
+  }
+}

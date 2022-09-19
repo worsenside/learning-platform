@@ -1,0 +1,48 @@
+@import 'src/assets/variables';
+@import 'src/assets/breakpoints';
+
+.tableMobile {
+  background: $white;
+}
+.tableMobileCell {
+  padding: 20px;
+  border-bottom: 1px solid $gray-secondary;
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+.mobileHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.personalInfo {
+  display: flex;
+  gap: 12px;
+  align-items: center
+}
+.initialsOfName {
+  font-size: 16px;
+}
+.mobileBody {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+  gap: 16px;
+}
+.mobileItem {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  p {
+    &:first-of-type {
+      font-size: $table-header-fz;
+      color: $black-tertiary;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+    &:last-of-type {
+      font-size: $table-body-fz;
+    }
+  }
+}

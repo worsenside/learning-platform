@@ -1,0 +1,98 @@
+{
+  "LOGIN": {
+    "login": "beadworf@yandex.ru",
+    "password": "123123123",
+    "platform": "lp"
+  },
+  "user": {
+    "login": "test@gmail.ru",
+    "password": "12345678",
+    "platform": "up"
+  },
+  "school": {
+    "name": "sadasd",
+    "description": "sa",
+    "avatarUrl": "",
+    "siteUrl": "asd.com"
+  },
+  "changePassword": {
+    "password": "123123123",
+    "newPassword": "123123123"
+  },
+  "sendInvite": {
+    "email": "asdasd@gmail.com"
+  },
+  "users": {
+    "entities": [
+      {
+        "id": 4,
+        "photo": "",
+        "firstName": "Leanne Graham",
+        "lastName": "Bret",
+        "email": "Sincere@april.biz",
+        "dateOfLastLogin": "22.12.2022, 10:30",
+        "dateOfCreate": "22.12.2022, 10:30"
+      },
+      {
+        "id": 28,
+        "photo": "",
+        "firstName": "Leanne Graham",
+        "lastName": "Bret",
+        "email": "Sincere@april.biz",
+        "dateOfLastLogin": "22.12.2022, 10:30",
+        "dateOfCreate": "22.12.2022, 10:30"
+      },
+      {
+        "id": 15,
+        "photoUrl": "",
+        "firstName": "Danny",
+        "lastName": "Graham",
+        "email": "Sincere@april.biz",
+        "dateOfLastLogin": "22.12.2022, 10:30",
+        "dateOfCreate": "22.12.2022, 10:30"
+      }
+    ],
+    "pageItemsCount": "1",
+    "totalItemsCount": "20"
+  },
+  "courses": {
+    "entities": [
+      {
+        "id": 1,
+        "name": "Course 1",
+        "description": "course 1 desc",
+        "type": "published"
+      },
+      {
+        "id": 2,
+        "name": "Course 2",
+        "description": "course 2 desc",
+        "type": "trashed"
+      },
+      {
+        "id": 3,
+        "name": "Course 3",
+        "description": "course 3 desc",
+        "type": "archived"
+      }
+    ],
+    "pageItemsCount": "1",
+    "totalItemsCount": "20"
+  },
+  "userById": {
+    "firstName": "Александр",
+    "lastName": "Александров",
+    "email": "Александр@gmail.com",
+    "phone": "9896734534534",
+    "courses": [
+      {
+        "name": "React JS",
+        "role": "Преподаватель"
+      },
+      {
+        "name": "Vue JS",
+        "role": "Куратор"
+      }
+    ]
+  }
+}

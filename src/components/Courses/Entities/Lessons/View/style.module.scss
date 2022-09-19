@@ -1,0 +1,52 @@
+@import 'src/assets/variables';
+@import 'src/assets/breakpoints';
+
+.container {
+  margin-top: 12px;
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+}
+.header {
+  padding: 24px;
+  background: $white;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  h2 {
+    font-weight: 500;
+  }
+  p {
+    font-size: $caption-primary-fz;
+  }
+}
+.videoContainer {
+  padding: 24px;
+  background: $white;
+  @include mobile {
+    padding: 24px 0;
+  }
+}
+.docs {
+  padding: 24px;
+  background: $white;
+  h2 {
+    font-weight: 500;
+    @include mobile {
+      font-size: $caption-primary-fz;
+      font-weight: 400;
+    }
+  }
+}
+.docsList {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.downloadLink {
+  font-size: $link-primary-fz;
+  color: $black-secondary;
+  text-decoration: underline;
+}

@@ -1,0 +1,71 @@
+@import "src/assets/variables";
+@import "src/assets/breakpoints";
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 480px;
+  label {
+    font-size: $input-primary-fz;
+    font-weight: 500;
+    cursor: pointer;
+  }
+}
+
+.splitLine {
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.08);
+  margin-bottom: 16px;
+}
+
+.courses {
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  label {
+    font-size: $input-primary-fz;
+    font-weight: 500;
+    color: $black-secondary
+  }
+}
+.coursesTable {
+  border: 1px solid $gray-primary;
+  tr {
+    border: 1px solid $gray-primary!important;
+  }
+  thead {
+    height: unset;
+    min-height: 44px;
+    tr {
+      th {
+        padding: 12px 24px;
+      }
+    }
+  }
+  tbody {
+    tr {
+      padding: 12px 24px;
+      height: unset;
+      min-height: 44px;
+    }
+  }
+}
+.buttonContainer {
+  button {
+    @include mobile {
+      width: 100%;
+    }
+  }
+}

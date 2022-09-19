@@ -1,0 +1,5 @@
+export { default as AuthorizationService } from './AuthorizationService'
+export { default as RegistrationService } from './RegistrationService'
+export { default as PasswordRecoveryService } from './PasswordRecoveryService'
+export { default as SchoolService } from './SchoolService'
+export { default as UserService } from './UserService'
